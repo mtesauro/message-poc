@@ -1,8 +1,9 @@
 package repository
 
 import (
-	"Messenger/internal/core/domain"
 	"encoding/json"
+
+	"github.com/mtesauro/message-poc/internal/core/domain"
 
 	"github.com/go-redis/redis/v7"
 )

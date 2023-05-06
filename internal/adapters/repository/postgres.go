@@ -1,9 +1,10 @@
 package repository
 
 import (
-	"Messenger/internal/core/domain"
 	"errors"
 	"fmt"
+
+	"github.com/mtesauro/message-poc/internal/core/domain"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"

@@ -1,4 +1,4 @@
-module messenger
+module github.com/mtesauro/message-poc
 
 go 1.19
 
