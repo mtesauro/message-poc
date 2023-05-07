@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/mtesauro/message-poc/internal/core/domain"
-	"github.com/mtesauro/message-poc/internal/core/ports"
+	"message-poc/internal/core/domain"
+	"message-poc/internal/core/ports"
 
 	"github.com/google/uuid"
 )

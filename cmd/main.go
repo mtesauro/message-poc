@@ -4,9 +4,11 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/mtesauro/message-poc/internal/adapters/handler"
-	"github.com/mtesauro/message-poc/internal/adapters/repository"
-	"github.com/mtesauro/message-poc/internal/core/services"
+	//"github.com/mtesauro/message-poc/internal/adapters/handler"
+	"message-poc/internal/adapters/handler"
+
+	"message-poc/internal/adapters/repository"
+	"message-poc/internal/core/services"
 
 	"github.com/gin-gonic/gin"
 )

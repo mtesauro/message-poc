@@ -1,4 +1,4 @@
-module github.com/mtesauro/message-poc
+module message-poc
 
 go 1.19
 

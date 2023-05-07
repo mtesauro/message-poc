@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/mtesauro/message-poc/internal/core/domain"
-	"github.com/mtesauro/message-poc/internal/core/services"
+	"message-poc/internal/core/domain"
+	"message-poc/internal/core/services"
 
 	"net/http"
 

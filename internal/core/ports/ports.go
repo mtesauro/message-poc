@@ -1,6 +1,6 @@
 package ports
 
-import "github.com/mtesauro/message-poc/internal/core/domain"
+import "message-poc/internal/core/domain"
 
 type MessengerService interface {
 	SaveMessage(message domain.Message) error
