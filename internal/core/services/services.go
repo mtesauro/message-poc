@@ -29,3 +29,12 @@ func (m *MessengerService) ReadMessage(id string) (*domain.Message, error) {
 func (m *MessengerService) ReadMessages() ([]*domain.Message, error) {
 	return m.repo.ReadMessages()
 }
+
+func (m *MessengerService) CloneMessage(origMess domain.Message) error {
+	message := domain.Message{
+		ID:     uuid.New().String(),
+		Body:   origMess.Body,
+		Status: origMess.Status,
+	}
+	return m.repo.SaveMessage(message)
+}

@@ -43,5 +43,6 @@ func InitRoutes() {
 	router.GET("/messages/:id", handler.ReadMessage)
 	router.GET("/messages", handler.ReadMessages)
 	router.POST("/messages", handler.SaveMessage)
+	router.PUT("/clone/message/:id", handler.CloneMessage)
 	router.Run(":5000")
 }

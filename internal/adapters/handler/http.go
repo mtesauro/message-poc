@@ -67,3 +67,29 @@ func (h *HTTPHandler) ReadMessages(ctx *gin.Context) {
 	}
 	ctx.JSON(http.StatusOK, messages)
 }
+
+func (h *HTTPHandler) CloneMessage(ctx *gin.Context) {
+	// Get the info for the provided ID
+	id := ctx.Param("id")
+	message, err := h.svc.ReadMessage(id)
+
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	err = h.svc.SaveMessage(*message)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{
+			"error": err,
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusCreated, gin.H{
+		"message": "New message created successfully",
+	})
+
+}
